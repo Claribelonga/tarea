@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Tareasxd</title>
+</head>
+<body>
+    
+    <!-- <div class="app">
+        <!-- Botón hamburguesa 
+        <button id="toggle-aside" class="icono-menu">☰ Filtros</button>
+        
+        <!-- Aside con filtros 
+        <aside class="filtros">
+            <button class="btn-filtro activo">Todo</button>
+            <button class="btn-filtro">Hogar</button>
+            <button class="btn-filtro">Escuela</button>
+            <button class="btn-filtro">Trabajo</button>
+        </aside>
+        
+        <!-- Contenedor principal 
+        <main class="contenedor">
+            <h1>Lista de Tareas</h1>
+            
+          <!-- Formulario de tareas 
+          <form class="formulario">
+            <input type="text" placeholder="Nombre de la tarea" required />
+            <select required>
+              <option value="">Categoría</option>
+              <option value="hogar">Hogar</option>
+              <option value="escuela">Escuela</option>
+              <option value="trabajo">Trabajo</option>
+            </select>
+            <select required>
+              <option value="">Prioridad</option>
+              <option value="urgente">Urgente</option>
+              <option value="media">Media</option>
+              <option value="baja">No urgente</option>
+            </select>
+            <button type="submit">Agregar</button>
+          </form>
+    
+          <!-- Ordenamiento -
+          <div class="orden">
+            <label for="ordenar">Ordenar por prioridad:</label>
+            <select id="ordenar">
+              <option>Urgente primero</option>
+              <option>No urgente primero</option>
+            </select>
+          </div>
+    
+          <!-- Lista dinámica --
+          <ul class="lista-tareas">
+            <!-- Acá irán las tareas agregadas con JS -
+          </ul>
+        </main>
+      </div>
+    
+      <script>
+        const botonMenu = document.getElementById('toggle-aside');
+        const aside = document.querySelector('.filtros');
+    
+        botonMenu.addEventListener('click', () => {
+          aside.classList.toggle('visible');
+        });
+      </script> -->
+
+
+      <div class="app">
+        <h1>Lista de Tareas</h1>
+    
+        <div class="top-section">
+          <div class="menu">
+            <button id="toggle-aside" class="icono-menu">☰ Filtros</button>
+            <aside class="filtros" id="filtros">
+              <button class="btn-filtro">Todo</button>
+              <button class="btn-filtro">Hogar</button>
+              <button class="btn-filtro">Escuela</button>
+              <button class="btn-filtro">Trabajo</button>
+            </aside>
+          </div>
+    
+          <form class="formulario">
+            <input type="text" placeholder="Nombre de la tarea"  />
+            <select required>
+              <option value="">Categoría</option>
+              <option value="hogar">Hogar</option>
+              <option value="escuela">Escuela</option>
+              <option value="trabajo">Trabajo</option>
+            </select>
+            <select required>
+              <option value="">Prioridad</option>
+              <option value="urgente">Urgente</option>
+              <option value="media">Media</option>
+              <option value="baja">No urgente</option>
+            </select>
+            <button type="submit" class="btn-agregar">Agregar</button>
+          </form>
+        </div>
+    
+        <!-- Acá irán las tareas cuando se agreguen -->
+        <main class="contenedor-tareas">
+          <!-- Vacío por ahora -->
+        </main>
+      </div>
+    
+      <script>
+        // Mostrar u ocultar el aside
+        const toggleBtn = document.getElementById('toggle-aside');
+        const filtros = document.getElementById('filtros');
+        toggleBtn.addEventListener('click', () => {
+          filtros.classList.toggle('visible');
+        });
+      </script>
+</body>
+</html>
