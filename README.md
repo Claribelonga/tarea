@@ -1,10 +1,10 @@
 # README #
 este es un repositorio de...
 
-### NOMBRE Y APELLIDO###
+### NOMBRE Y APELLIDO: ###
 Claribel Vidal Arnez
 
-### Materia###
+### MATERIA: ###
 Taller de Ingenieria de Software
 
 ### CURSO: ###
